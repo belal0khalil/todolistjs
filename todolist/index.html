@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Javascript</title>
+    
+    <link rel="stylesheet" href="main.css"/>
+     <!-- <script src="main.js"></script>  -->
+  <style>
+         body {
+        font-family: Arial, Helvetica, sans-serif;
+      } 
+      .container {
+        width: 500px;
+        margin: 20px auto;
+      }
+      .form {
+        background-color: #eee ;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border-radius: 6px;
+      }
+       .input {
+        padding: 6px;
+        border: 1px solid #ddd ;
+        border-radius: 6px;
+        /* flex: 1; */
+        width:400px;
+      }
+      .input:focus{
+        outline: none;
+      }
+      .add {
+        background-color: #f44336;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        border: 1px solid #eee;
+        border-radius: 6px ;
+        padding: 10px;
+        margin-left: 6px;
+      }
+      .tasks {
+        background-color: #eee;
+        margin-top: 20px ;
+        border-radius: 6px;
+        padding: 20px;
+      }
+      .tasks .task {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 6px;
+        transition: 0.3s;
+      }
+      .tasks .task:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      .task .task:hover {
+        background-color:#f7f7f7 ;
+      }
+      .tasks .task.done {
+        opacity: 0.5;
+      }
+      .tasks .task span {
+        font-weight: bold;
+        background-color: red;
+        font-size: 10px;
+        color: white;
+        padding: 2px 6px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .del1 {
+        background-color: #f44336;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        border: 1px solid #eee;
+        border-radius: 6px ;
+        padding: 10px;
+        margin-left: 180px;
+        cursor: pointer;
+      }
+      
+    </style>
+</head>
+<body>
+  <div class="container">
+
+  <div class="form">
+    <input type="text" class="input" />
+    <input type="submit"  class="add" value="Add task">
+  </div>
+  <div class = tasks></div>
+  <input type="submit"  class="del1" value="Delete All">
+  </div>
+  <script src="main.js"></script>
